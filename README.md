@@ -1,2 +1,2 @@
 # tic-tac-toe-online
-kek
+PYTHON 3.10 ONLY
