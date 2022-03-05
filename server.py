@@ -28,6 +28,8 @@ class Game:
         self.win = 0
         self.user1 = usr1
         self.user2 = usr2
+        usr1.send('1'.encode('utf-8'))
+        usr2.send('0'.encode('utf-8'))
         self.start = random.randint(1, 2)
         self.pole = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.stop = False
@@ -105,6 +107,9 @@ def check_game():
         temp = find_game
         find_game = []
         Game(temp[0], temp[1])
+    else:
+        while len(find_game) == 0:
+            pass
 def main():
     while True:
         print('Checking...')
