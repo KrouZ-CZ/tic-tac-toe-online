@@ -107,9 +107,6 @@ def check_game():
         temp = find_game
         find_game = []
         Game(temp[0], temp[1])
-    else:
-        while len(find_game) == 0:
-            pass
 def main():
     while True:
         print('Checking...')
